@@ -40,18 +40,8 @@ Antes de executar o script, você **precisa** ajustar algumas variáveis diretam
     *   `y_coord_enviar = 688`
     *   **Estas coordenadas são específicas para a resolução de tela, tamanho da janela do navegador e layout do WhatsApp Web no momento em que foram definidas.** Elas **QUASE CERTAMENTE** precisarão ser ajustadas para a *sua* tela.
     *   **Como encontrar suas coordenadas:**
-        *   Execute o script uma vez para abrir uma janela do WhatsApp Web.
-        *   Pause o script (ou abra um terminal Python separado).
-        *   Use o comando `python -m pyautogui` e depois `pyautogui.displayMousePosition()` no terminal, ou execute um pequeno script como:
-            ```python
-            import pyautogui
-            import time
-            print("Mova o mouse para o botão ENVIAR e aguarde...")
-            time.sleep(5)
-            x, y = pyautogui.position()
-            print(f"Coordenadas: x={x}, y={y}")
-            ```
-        *   Posicione o cursor do mouse exatamente sobre o centro do botão "Enviar" na janela do WhatsApp Web e anote os valores de X e Y exibidos.
+        *   Execute o script posicao-mouse2.py, uma vez para abrir uma janela do WhatsApp Web.
+        *   Posicione o cursor do mouse exatamente sobre o centro do botão "Enviar" na janela do WhatsApp Web e aperte "l" anote os valores de X e Y exibidos no log do programa e aperte "esc".
         *   Atualize `x_coord_enviar` e `y_coord_enviar` no script com os seus valores.
 
 4.  **Tempos de Espera (`sleep`):**
